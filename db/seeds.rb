@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+michelles_list = SmarterCSV.process("csv/michelles_list.csv")
+corys_list = SmarterCSV.process("csv/corys_list.csv")
+
+groups = (michelles_list + corys_list).select{ |a| a[:group_name] }.map{ |a| a[:group_name]}
