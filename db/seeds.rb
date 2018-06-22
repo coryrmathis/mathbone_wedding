@@ -9,4 +9,5 @@
 michelles_list = SmarterCSV.process("csv/michelles_list.csv")
 corys_list = SmarterCSV.process("csv/corys_list.csv")
 
-groups = (michelles_list + corys_list).select{ |a| a[:group_name] }.map{ |a| a[:group_name]}
+groups = (michelles_list + corys_list).select{ |a| a[:group_name] }.map{ |a| a[:group_name]}.uniq
+

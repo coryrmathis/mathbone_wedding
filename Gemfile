@@ -54,3 +54,11 @@ gem "faker"
 
 # CSV Parsing
 gem 'smarter_csv', '~> 1.1.4'
+
+# BOOTSTRAP
+
+gem 'bootstrap', '~> 4.1.1'
+
+# JQUERY DEPENDENCY
+
+gem 'jquery-rails'

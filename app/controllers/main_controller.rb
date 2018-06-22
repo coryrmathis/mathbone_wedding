@@ -5,4 +5,7 @@ class MainController < ApplicationController
   def index
     render "coming_soon" if COMING_SOON
   end
+
+  def rsvp
+  end
 end

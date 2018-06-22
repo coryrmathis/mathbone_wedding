@@ -11,6 +11,8 @@
 
   <body>
     <div id="main-content-container">
+      <%=render "layouts/main_navbar"%>
+      <div id="notice"><%=notice%></div>
       <%= yield %>
     </div>
   </body>

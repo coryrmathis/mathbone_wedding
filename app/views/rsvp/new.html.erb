@@ -1,0 +1,28 @@
+<%= form_tag "/rsvp", id: "rsvp-form" do %>
+
+  <div class="form-group">
+    <label>Name</label>
+    <input class="form-control" type="text" name="rsvp[name]">
+  </div>
+  <div class="form-group">
+    <label>Number of People</label>
+    <input class="form-control" type="text" name="rsvp[num]">
+    <small class="form-text text-muted">Including Yourself.</small>
+  </div>
+  <div class="form-group">
+    <label>Are you interested in splitting accommadtions?</label>
+    <input class="form-control" type="checkbox" name="rsvp[share_room]">
+    <small class="form-text text-muted">We'll put you in touch with one another.</small>
+  </div>
+  <div class="form-group">
+    <label>Wanna Float?</label>
+    <input class="form-control" type="checkbox" name="rsvp[float_trip]">
+    <small class="form-text text-muted">We're gonna float the next day if you can stick around!</small>
+  </div>  
+  <div class="form-group">
+    <input class="btn btn-xl btn-default" type="submit" name="RSVP">
+  </div>
+  
+<%end%>
+
+
