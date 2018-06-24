@@ -2,16 +2,29 @@
   padding: 30px 20px;
   position: relative;
   display: block;
-  height: 520px;
+  min-height: 400px;
   width: 50%;
   margin: 0 auto;
   background-color: #C6C1A8;
-  top: 40%;
+  top: 45%;
   transform: translateY(-50%);
   border-radius: 20px;
+  overflow: auto;
+  font-size: 60%;
+
+  .col-sm-6:nth-of-type(2) {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 120%;
+  }
 
   input[type='submit'] {
-    display: block;
     margin: 0 auto;
+    display: block;
   }
 }

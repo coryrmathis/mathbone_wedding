@@ -4,12 +4,11 @@ Rails.application.routes.draw do
 
 
 
-
-
-
-
-  get "/rsvp", to: "rsvp#new"
+  get "/rsvp", to: "rsvp#new", as: "new_rsvp"
   post "/rsvp", to: "rsvp#create"
+
+  get "/accomodations", to: "main#accomodations", as: "accomodations"
+  get "/info", to: "main#info", as: "info"
 
   root "main#index"
 end

@@ -1,27 +1,42 @@
-<%= form_tag "/rsvp", id: "rsvp-form" do %>
+<%= form_tag "/rsvp", id: "rsvp-form", class: "form" do %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" type="text" name="rsvp[name]" required>
+        </div>
 
-  <div class="form-group">
-    <label>Name</label>
-    <input class="form-control" type="text" name="rsvp[name]">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" class="form-control" name="rsvp[email]" required>
+          <small class="form-text text-muted">For updates and questions.</small>
+        </div>
+
+        <div class="form-group">
+          <label>Number of People</label>
+          <input class="form-control" type="text" name="rsvp[num_people]" required>
+          <small class="form-text text-muted">Including Yourself.</small>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label>Are you interested in splitting accommodations?</label>
+          <input class="form-control" type="checkbox" name="rsvp[share_room]">
+          <small class="form-text text-muted">We'll put you in touch with one another.</small>
+        </div>
+        <div class="form-group">
+          <label>Wanna Float?</label>
+          <input class="form-control" type="checkbox" name="rsvp[float_trip]">
+          <small class="form-text text-muted">We're gonna float the next day if you can stick around!</small>
+        </div>  
+      </div>    
+    </div>
+      <div class="form-group">
+        <input class="btn btn-xl btn-default" type="submit" name="RSVP">
+      </div>
   </div>
-  <div class="form-group">
-    <label>Number of People</label>
-    <input class="form-control" type="text" name="rsvp[num]">
-    <small class="form-text text-muted">Including Yourself.</small>
-  </div>
-  <div class="form-group">
-    <label>Are you interested in splitting accommadtions?</label>
-    <input class="form-control" type="checkbox" name="rsvp[share_room]">
-    <small class="form-text text-muted">We'll put you in touch with one another.</small>
-  </div>
-  <div class="form-group">
-    <label>Wanna Float?</label>
-    <input class="form-control" type="checkbox" name="rsvp[float_trip]">
-    <small class="form-text text-muted">We're gonna float the next day if you can stick around!</small>
-  </div>  
-  <div class="form-group">
-    <input class="btn btn-xl btn-default" type="submit" name="RSVP">
-  </div>
+  
   
 <%end%>
 

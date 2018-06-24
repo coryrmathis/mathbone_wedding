@@ -6,6 +6,10 @@ class MainController < ApplicationController
     render "coming_soon" if COMING_SOON
   end
 
-  def rsvp
+  def info
   end
+
+  def accomodations
+  end
+
 end

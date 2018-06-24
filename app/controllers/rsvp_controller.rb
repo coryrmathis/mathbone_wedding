@@ -4,9 +4,13 @@ class RSVPController < ApplicationController
   end
 
   def create
-    flash[:notice] = "Thank for the RSVP!"
-    # redirect_to root_path
-    render json: params
+    rsvp = RSVP.new(rsvp_params)
+    if rsvp.save
+      redirect_to "rsvp/thanks"
+    else
+      errors = rsvp.errors.full_messages.join(" | ")
+      redirect_to new_rsvp_path, notice: errors
+    end
   end
 
   private
@@ -14,7 +18,8 @@ class RSVPController < ApplicationController
   def rsvp_params
     params.require(:rsvp).permit(
       :name,
-      :num,
+      :num_people,
+      :email,
       :share_room,
       :float_trip
     )
