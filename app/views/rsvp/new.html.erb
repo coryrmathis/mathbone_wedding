@@ -15,15 +15,21 @@
 
         <div class="form-group">
           <label>Number of People</label>
-          <input class="form-control" type="text" name="rsvp[num_people]" required>
+          <input class="form-control" type="number" name="rsvp[num_people]" required autocomplete="off">
           <small class="form-text text-muted">Including Yourself.</small>
         </div>
       </div>
       <div class="col-sm-6">
+        <h6>We'll send out some email to coordinate!</h6>
         <div class="form-group">
           <label>Are you interested in splitting accommodations?</label>
           <input class="form-control" type="checkbox" name="rsvp[share_room]">
-          <small class="form-text text-muted">We'll put you in touch with one another.</small>
+          <small class="form-text text-muted">Save some money!</small>
+        </div>
+        <div class="form-group">
+          <label>Do you wanna carpool?</label>
+          <input class="form-control" type="checkbox" name="rsvp[carpool]">
+          <small class="form-text text-muted">The venue is about an hour outside STL.</small>
         </div>
         <div class="form-group">
           <label>Wanna Float?</label>

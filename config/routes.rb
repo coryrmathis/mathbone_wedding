@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/rsvp", to: "rsvp#new", as: "new_rsvp"
   post "/rsvp", to: "rsvp#create"
 
+  get "/invite", to: "main#invite", as: "invite"
   get "/accomodations", to: "main#accomodations", as: "accomodations"
   get "/info", to: "main#info", as: "info"
 

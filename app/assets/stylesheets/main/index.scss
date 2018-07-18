@@ -1,51 +1,27 @@
-#main-navbar{
-    width: 100%
-}
+
 
 #main-index-container {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 3%;
+  margin: 0 auto;
+  min-height: 100%;
+  background-image: image-url("invite_drawing.jpg");
+  background-position: center;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  
 }
 
-#main-index00 {
-  background-color: red;
-  height: 36vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 2em;
-  overflow: hidden;
+.navbar {
+  background-color: #c0ef83;
+  max-height: 7vh;
+}
 
+.navbar-brand {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.7em;
 
 }
 
-#main-index01 {
-  height: 36vh;
-  background-color: green;
-  font-size: 2.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  overflow: hidden;
-
-  div:nth-of-type(2){
-    text-align: center;
-    font-size: 2em;
-  }
-
-  div:nth-of-type(3){
-    text-align: right;
-  }
-}
-
-#main-index11{
-  background-color: aqua;
-  height: 45vh;
-  padding: 40px 150px 40px 150px;
+.navbar-collapse {
+  font-family: 'Handlee', cursive;
 }
