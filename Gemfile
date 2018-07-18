@@ -47,3 +47,18 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Fake Data
+
+gem "faker"
+
+# CSV Parsing
+gem 'smarter_csv', '~> 1.1.4'
+
+# BOOTSTRAP
+
+gem 'bootstrap', '~> 4.1.1'
+
+# JQUERY DEPENDENCY
+
+gem 'jquery-rails'

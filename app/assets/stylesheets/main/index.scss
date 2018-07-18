@@ -1,0 +1,27 @@
+
+
+#main-index-container {
+  margin: 0 auto;
+  min-height: 100%;
+  background-image: image-url("invite_drawing.jpg");
+  background-position: center;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  
+}
+
+.navbar {
+  background-color: #c0ef83;
+  max-height: 7vh;
+}
+
+.navbar-brand {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.7em;
+
+}
+
+.navbar-collapse {
+  font-family: 'Handlee', cursive;
+}

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MathboneWebsite</title>
+    <title>Cory + Michelle</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Sacramento" rel="stylesheet">
+
   </head>
 
   <body>
     <div id="main-content-container">
+      <%=render "layouts/main_navbar"%>
+      <%if notice%>
+        <div id="notice" class="alert alert-warning" role="alert">
+          <%=notice%>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <%end%>
       <%= yield %>
     </div>
   </body>
