@@ -3,11 +3,17 @@
 
     h4{
       font-family: 'Sacramento', cursive;
+      text-align: center;
     }
 
   }
-  .modal-body > ul {
+
+  #info-lists{
     font-family: 'Handlee', cursive;
+  }
+
+  #info-lists ul {
+    list-style-type: disc;
   }
 }
 

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 
 
+  get "/admin/rsvps", to: "admin#rsvps", as: "admin_rsvps"
 
   get "/rsvp", to: "rsvp#new", as: "new_rsvp"
   post "/rsvp", to: "rsvp#create"

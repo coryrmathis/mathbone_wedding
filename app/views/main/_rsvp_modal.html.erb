@@ -3,14 +3,33 @@
     <div class="modal-content">
       
       <div class="modal-body">
-        <h4 id="rsvp-modal-title">RSVP</h4>  
+        <h4 id="rsvp-modal-title">RSVP</h4>
         <%= form_tag "/rsvp", id: "rsvp-form", class: "form" do %>
+          
           <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                
+              </div>
+              <div class="col-sm-6">
+                <div id="regrets-input" class="form-group">
+                  <h4>Can you make it?</h4>
+                  <input type="radio" name="rsvp[regrets]" value="true" checked>
+                  <label>Yes</label>
+                  <input type="radio" name="rsvp[regrets]" value="false">
+                  <label>No</label>
+                </div>
+                <div class="col-sm-3">
+                
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label>Name</label>
+                  <label>Names</label>
                   <input class="form-control" type="text" name="rsvp[name]" required>
+                  <small class="form-text text-muted">List all the people in your party please!</small>
                 </div>
 
                 <div class="form-group">
@@ -24,6 +43,7 @@
                   <input class="form-control" type="number" name="rsvp[num_people]" required autocomplete="off">
                   <small class="form-text text-muted">Including Yourself.</small>
                 </div>
+
               </div>
               <div class="col-sm-6">
                 <h5>We'll send out some email to coordinate!</h5>
@@ -41,8 +61,20 @@
                   <label>Wanna Float?</label>
                   <input class="form-control" type="checkbox" name="rsvp[float_trip]">
                   <small class="form-text text-muted">We're gonna float the next day if you can stick around!</small>
-                </div>  
+                </div>
+
               </div>    
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label>Notes</label>
+                  <textarea class="form-control" name="rsvp[notes]">
+                    
+                  </textarea> 
+                  <small class="form-text text-muted">Drop us a line!</small>
+                </div>
+              </div>
             </div>
               <div class="form-group">
                 <input class="btn btn-xl btn-success" type="submit" value="&#10004;">

@@ -21,7 +21,9 @@ class RSVPController < ApplicationController
       :num_people,
       :email,
       :share_room,
-      :float_trip
+      :float_trip,
+      :regrets,
+      :notes
     )
   end
 

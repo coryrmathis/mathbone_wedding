@@ -1,8 +1,9 @@
 #rsvpModal {
   .modal-content{
-    padding: 50px;
+    padding: 10px;
     font-family: 'Handlee', cursive;
     opacity: .9;
+    padding-bottom: 0px;
   }
 
   #rsvp-modal-title {
@@ -16,6 +17,10 @@
     font-family: 'Handlee', cursive;
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 3px;
+  }
+
+  #regrets-input {
+    text-align: center;
   }
 }
