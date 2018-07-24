@@ -6,7 +6,7 @@ class RSVPController < ApplicationController
   def create
     rsvp = RSVP.new(rsvp_params)
     if rsvp.save
-      redirect_to "/", "Thanks for the RSVP!"
+      redirect_to "/", notice: "Thanks for the RSVP!"
     else
       errors = rsvp.errors.full_messages.join(" | ")
       redirect_to "/", notice: errors
