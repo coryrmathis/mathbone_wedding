@@ -1,6 +1,20 @@
 <table class="table table-hover table-striped">
-  
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Num People</td>
+      <td></td>
+    </tr>
+  </thead>
+  <%@rsvps.each do |rsvp|%>
+    <tr>
+      <td><%=rsvp.name%></td>
+      <td><%=rsvp.num_people%></td>
+      <td><%=rsvp.email%></td>
+      <td><%=rsvp.float_trip%></td>
+      <td><%=rsvp.share_room%></td>
+      <td><%=rsvp.regrets%></td>
+      <td><%=rsvp.notes%></td>
+    </tr>
+  <%end%>
 </table>
-<%@rsvps.each do |rsvp|%>
-<div>rsvp</div>
-<%end%>
