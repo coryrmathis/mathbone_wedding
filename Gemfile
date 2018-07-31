@@ -62,3 +62,6 @@ gem 'bootstrap', '~> 4.1.1'
 # JQUERY DEPENDENCY
 
 gem 'jquery-rails'
+
+
+gem "font-awesome-rails"

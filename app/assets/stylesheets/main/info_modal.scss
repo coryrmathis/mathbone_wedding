@@ -1,15 +1,24 @@
 #infoModal {
+  .modal-content{
+    opacity: .9;
+  }
+  
   .modal-body{
-
-    h4{
+    margin: 70px;
+    margin-top: 30px;
+    padding: 10px;
+    h1{
       font-family: 'Sacramento', cursive;
       text-align: center;
+      font-weight: 500;
     }
 
   }
 
   #info-lists{
     font-family: 'Handlee', cursive;
+    list-style-type: none;
+    font-size: 1.2em;
   }
 
   #info-lists ul {

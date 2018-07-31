@@ -6,11 +6,17 @@ class RSVPController < ApplicationController
   def create
     rsvp = RSVP.new(rsvp_params)
     if rsvp.save
-      redirect_to "/", notice: "Thanks for the RSVP!"
+      render json: rsvp
     else
-      errors = rsvp.errors.full_messages.join(" | ")
-      redirect_to "/", notice: errors
+
+      render json: "FUCK"
     end
+    # if rsvp.save
+    #   redirect_to "/thanks", notice: "We've got your RSVP!"
+    # else
+    #   errors = rsvp.errors.full_messages.join(" | ")
+    #   redirect_to "/", notice: errors
+    # end
   end
 
   private
