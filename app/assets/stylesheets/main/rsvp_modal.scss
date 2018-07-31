@@ -28,3 +28,11 @@
     text-align: center;
   }
 }
+
+@media (max-height: 778px) {
+  #rsvpModal {
+    height: 75vh;
+    font-size: .7em;
+    overflow: scroll;
+  }
+}

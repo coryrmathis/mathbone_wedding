@@ -3,13 +3,12 @@
     <div class="modal-content">
       
       <div class="modal-body">
-        <h4 id="rsvp-modal-title">RSVP</h4>
         <%= form_tag "/rsvp", id: "rsvp-form", class: "form" do %>
           
           <div class="container">
             <div class="row">
-              <div class="col-sm-3">
-                
+              <div class="col-sm-6">
+                <h4 id="rsvp-modal-title">RSVP</h4>
               </div>
               <div class="col-sm-6">
                 <div id="regrets-input" class="form-group">
@@ -19,9 +18,7 @@
                   <input type="radio" name="rsvp[regrets]" value="false">
                   <label>No</label>
                 </div>
-                <div class="col-sm-3">
                 
-                </div>
               </div>
             </div>
             <div class="row">
@@ -66,7 +63,7 @@
               </div>    
             </div>
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-6">
                 <div class="form-group">
                   <label>Notes</label>
                   <textarea class="form-control" name="rsvp[notes]">
@@ -75,10 +72,12 @@
                   <small class="form-text text-muted">Drop us a line!</small>
                 </div>
               </div>
-            </div>
-              <div class="form-group">
-                <input class="btn btn-xl btn-success" type="submit" value="&#10004;">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="btn btn-xl btn-success" type="submit" value="&#10004;">
+                </div>
               </div>
+            </div>
           </div>
         <%end%>
       </div>
