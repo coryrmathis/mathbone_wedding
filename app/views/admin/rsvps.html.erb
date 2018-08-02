@@ -1,6 +1,7 @@
 <table class="table table-hover table-striped">
   <thead>
     <tr>
+      <td>#</td>
       <td>Name</td>
       <td>Num People</td>
       <td>Email</td>
@@ -11,8 +12,9 @@
 
     </tr>
   </thead>
-  <%@rsvps.each do |rsvp|%>
+  <%@rsvps.each_with_index do |rsvp, i|%>
     <tr>
+      <td><%=i + 1%></td>
       <td><%=rsvp.name%></td>
       <td><%=rsvp.num_people%></td>
       <td><%=rsvp.email%></td>
